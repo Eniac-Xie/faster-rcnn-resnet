@@ -12,9 +12,10 @@ To reduce the memory useage, we use batchnorm layer in [Microsoft's caffe](https
 # Modification
 1. The [caffe-fast-rcnn](https://github.com/Eniac-Xie/caffe-fast-rcnn.git) we use is a little different from the one [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) use,
    it use the batchnorm layer from [Microsoft's caffe](https://github.com/Microsoft/caffe) to reduce the memory useage.
-2. To reduce the memory usage, we also release a pretrained ResNet-101 model in which batchnorm layer's parameters is
+2. Using the in-place eltwise sum within the [PR](https://github.com/BVLC/caffe/pull/3708)
+3. To reduce the memory usage, we also release a pretrained ResNet-101 model in which batchnorm layer's parameters is
    merged into scale layer's, see tools/merge_bn_scale.py form more detail.
-3. Use Online-Hard-Example-Mining while training.
+4. Use Online-Hard-Example-Mining while training.
 
 # Installation
 The usage is similar to [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn).
