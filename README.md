@@ -18,22 +18,29 @@ To reduce the memory useage, we use batchnorm layer in [Microsoft's caffe](https
 
 # Installation
 The usage is similar to [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn).
+
 1. Clone this repository
   ```Shell
   git clone https://github.com/Eniac-Xie/faster-rcnn-resnet.git
   ```
   We'll call the directory that you cloned faster-rcnn-resnet 'ROOT'
+
 2. Clone the modified caffe-fast-rcnn
+
   ```Shell
   cd $ROOT/
   git clone https://github.com/Eniac-Xie/caffe-fast-rcnn.git
   ```
-3. Build Cython module]
+
+3. Build Cython module
+
   ```Shell
    cd $ROOT/lib/
    make
   ```
+
 4. Build Caffe
+
   ```Shell
    cd $ROOT/caffe-fast-rcnn
    make all -j8
@@ -51,12 +58,14 @@ Download faster-rcnn-resnet weights
 
 1. [faster-rcnn-resnet without ohem](http://pan.baidu.com/s/1kUKXgVH)
 2. [faster-rcnn-resnet with ohem](http://pan.baidu.com/s/1o8CtJwI)
+
   ```Shell
    cd $ROOT/
    sh experiments/scripts/train_resnet101_bn_scale_merged_0712_end2end.sh
    make
   ```
 or
+
   ```Shell
    cd $ROOT/
    sh experiments/scripts/train_resnet101_bn_scale_merged_0712_end2end_ohem.sh
@@ -71,11 +80,9 @@ then you can do as follow:
   ```Shell
    cd $ROOT/
    sh experiments/scripts/train_resnet101_bn_scale_merged_0712_end2end.sh
-   make
   ```
 or
   ```Shell
    cd $ROOT/
    sh experiments/scripts/train_resnet101_bn_scale_merged_0712_end2end_ohem.sh
-   make
   ```
