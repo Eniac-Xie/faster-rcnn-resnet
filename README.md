@@ -6,14 +6,14 @@ and Online Hard Example Mining.
 
 This is a ResNet Implementation for Faster-RCNN.
 The faster rcnn code is based on [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn).
-The ohem code is based on [ohem](https://github.com/abhi2610/ohem)
+The ohem code is based on [ohem](https://github.com/abhi2610/ohem).
 To reduce the memory useage, we use batchnorm layer in [Microsoft's caffe](https://github.com/Microsoft/caffe)
 
-# modification
-1. The caffe-fast-rcnn we use is a little different from the one [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) use,
-   it use the batchnorm layer of [Microsoft's caffe](https://github.com/Microsoft/caffe) to reduce the memory useage.
+# Modification
+1. The [caffe-fast-rcnn](https://github.com/Eniac-Xie/caffe-fast-rcnn.git) we use is a little different from the one [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) use,
+   it use the batchnorm layer from [Microsoft's caffe](https://github.com/Microsoft/caffe) to reduce the memory useage.
 2. To reduce the memory usage, we also release a pretrained ResNet-101 model in which batchnorm layer's parameters is
-   merged into scale layer's, see tool/merge_bn_scale.py form more detail.
+   merged into scale layer's, see tools/merge_bn_scale.py form more detail.
 3. Use Online-Hard-Example-Mining while training.
 
 # Installation
@@ -23,7 +23,7 @@ The usage is similar to [py-faster-rcnn](https://github.com/rbgirshick/py-faster
   ```Shell
   git clone https://github.com/Eniac-Xie/faster-rcnn-resnet.git
   ```
-  We'll call the directory that you cloned faster-rcnn-resnet 'ROOT'
+  We'll call the directory that you cloned faster-rcnn-resnet `ROOT`
 
 2. Clone the modified caffe-fast-rcnn
 
@@ -54,10 +54,9 @@ Faster-RCNN, ResNet-101 | VOC 07+12 trainval  | VOC 07 test           | False | 
 Faster-RCNN, ResNet-101 | VOC 07+12 trainval  | VOC 07 test           | True  | 79.44%  |
 
 # Testing
-Download faster-rcnn-resnet weights
+Download faster-rcnn-resnet weights from: [faster-rcnn-resnet without ohem](http://pan.baidu.com/s/1kUKXgVH) or [faster-rcnn-resnet with ohem](http://pan.baidu.com/s/1o8CtJwI)
 
-1. [faster-rcnn-resnet without ohem](http://pan.baidu.com/s/1kUKXgVH)
-2. [faster-rcnn-resnet with ohem](http://pan.baidu.com/s/1o8CtJwI)
+then you can do as follow:
 
   ```Shell
    cd $ROOT/
