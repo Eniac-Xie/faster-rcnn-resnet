@@ -55,7 +55,14 @@ Faster-RCNN, ResNet-101 | VOC 07+12 trainval  | VOC 07 test           | False | 
 Faster-RCNN, ResNet-101 | VOC 07+12 trainval  | VOC 07 test           | True  | 79.44%  |
 
 # Testing
-Download faster-rcnn-resnet weights from: [faster-rcnn-resnet without ohem](http://pan.baidu.com/s/1kUKXgVH) or [faster-rcnn-resnet with ohem](http://pan.baidu.com/s/1o8CtJwI)
+Download faster-rcnn-resnet weights from:
+[faster-rcnn-resnet without ohem (BaiduYun)](http://pan.baidu.com/s/1kUKXgVH)
+
+[faster-rcnn-resnet without ohem (OneDrive)](https://1drv.ms/u/s!AgkRygoHQVTXigHNLWT6gRbTHo2f)
+
+[faster-rcnn-resnet with ohem (BaiduYun)](http://pan.baidu.com/s/1o8CtJwI)
+
+[faster-rcnn-resnet with ohem (OneDrive)](https://1drv.ms/u/s!AgkRygoHQVTXigInqoym2V6z4CNA)
 
 then you can do as follow:
 
@@ -74,7 +81,7 @@ or
 
 # Training
 Download resnet-101 pretrained model, note that we use a modified version in which batchnorm layer's parameters is
-merged into scale layer's, you can download the model from [here](http://pan.baidu.com/s/1qX7VFjA)
+merged into scale layer's, you can download the model from [Baidu Yun](http://pan.baidu.com/s/1qX7VFjA) or [OneDrive](https://1drv.ms/u/s!AgkRygoHQVTXigBCR-5cnmAkfGfy)
 
 then you can do as follow:
   ```Shell
