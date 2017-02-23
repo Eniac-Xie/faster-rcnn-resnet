@@ -1,17 +1,17 @@
 # Faster-RCNN-ResNet
 
-This code extends [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) by add ResNet implementation
+This code extends [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) by adding ResNet implementation
 and Online Hard Example Mining.
 
 
 This is a ResNet Implementation for Faster-RCNN.
 The faster rcnn code is based on [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn).
 The ohem code is based on [ohem](https://github.com/abhi2610/ohem).
-To reduce the memory useage, we use batchnorm layer in [Microsoft's caffe](https://github.com/Microsoft/caffe)
+To reduce the memory usage, we use batchnorm layer in [Microsoft's caffe](https://github.com/Microsoft/caffe)
 
 # Modification
 1. The [caffe-fast-rcnn](https://github.com/Eniac-Xie/caffe-fast-rcnn.git) we use is a little different from the one [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) use,
-   it use the batchnorm layer from [Microsoft's caffe](https://github.com/Microsoft/caffe) to reduce the memory useage.
+   it uses the batchnorm layer from [Microsoft's caffe](https://github.com/Microsoft/caffe) to reduce the memory usage.
 2. Using the in-place eltwise sum within the [PR](https://github.com/BVLC/caffe/pull/3708)
 3. To reduce the memory usage, we also release a pretrained ResNet-101 model in which batchnorm layer's parameters is
    merged into scale layer's, see tools/merge_bn_scale.py form more detail.
