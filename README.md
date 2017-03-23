@@ -47,12 +47,13 @@ The usage is similar to [py-faster-rcnn](https://github.com/rbgirshick/py-faster
    make all -j8
    make pycaffe
   ```
-
 # Result
-|                       | training data       | test data             | ohem  |mAP@0.5|
-|-----------------------|:-------------------:|:--------------- -----:|:-----:|:-----:|
-|Faster-RCNN, ResNet-101| VOC 07+12 trainval  | VOC 07 test           | False | 78.78%|
-|Faster-RCNN, ResNet-101| VOC 07+12 trainval  | VOC 07 test           | True  | 79.44%|
+
+|                        | training data       | test data             |   ohem |    mAP@0.5    |
+|------------------------|:-------------------:|:---------------------:|:------:|:-------------:|
+|Faster-RCNN, ResNet-50  | VOC 07+12 trainval  | VOC 07 test           |  False |   78.78%      |           
+|Faster-RCNN, ResNet-101 | VOC 07+12 trainval  | VOC 07 test           |  True  |   79.44%      |     
+
 
 # Testing
 Download faster-rcnn-resnet weights from:
