@@ -4952,6 +4952,8 @@ layer {
   bottom: "res4b22"
   bottom: "rois_hard"
   top: "roi_pool5"
+  propagate_down: true
+  propagate_down: false
   roi_pooling_param {
     pooled_w: 14
     pooled_h: 14
