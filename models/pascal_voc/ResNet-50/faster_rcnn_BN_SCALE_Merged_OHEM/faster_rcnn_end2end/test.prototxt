@@ -3040,7 +3040,7 @@ layer {
   name: "roi_pool5_readonly"
   type: "ROIPooling"
   bottom: "res4f"
-  bottom: "roi_data"
+  bottom: "rois"
   top: "roi_pool5_readonly"
   propagate_down: false
   propagate_down: false
