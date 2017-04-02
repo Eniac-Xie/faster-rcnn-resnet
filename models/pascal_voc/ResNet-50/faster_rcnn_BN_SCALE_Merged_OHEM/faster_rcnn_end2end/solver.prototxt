@@ -1,4 +1,4 @@
-train_net: "models/pascal_voc/faster_rcnn_BN_SCALE_Merged_OHEM/faster_rcnn_end2end_ohem/train.prototxt"
+train_net: "models/pascal_voc/ResNet-50/faster_rcnn_BN_SCALE_Merged_OHEM/faster_rcnn_end2end/train.prototxt"
 base_lr: 0.001
 lr_policy: "step"
 gamma: 0.1
