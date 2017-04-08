@@ -6,3 +6,4 @@ lib/pycocotools/_mask.so
 output
 .idea
 *.tgz
+*.caffemodel
